@@ -9,7 +9,7 @@
                     ${e.id!==Object.values(d).length-1?'<div class="md:w-px md:h-6 md:ml-2 md:mr-2 w-32 h-px mt-1 mb-1 bg-black opacity-40" />':""}
                 </div>`)}
         </div>`}const n="/BiWi07-Videos/assets/IMG_5500-H7IIrrqH.png",a={INTRO:{id:"INTRO",title:"Einstieg und Vorstellung",href:"https://drive.google.com/file/d/15UhbZoX2ojD4bEujj1OeSnLRxRok0bhG/preview",key:"intro",icon:n,index:1},DEF:{id:"DEF",title:"Definitionen",href:"https://www.youtube.com/watch?v=146GL3pyKDY&list=RD146GL3pyKDY&start_radio=1",key:"def",icon:n,index:2},MEANING:{id:"MEANING",title:"Bedeutung für Menschen und Lernende",href:"https://drive.google.com/file/d/15KewuU6LFxVzXvnJRe3ZPNB28t1tY7i6/preview",key:"meaning",icon:n,index:3},IMPLEMENTATION:{id:"IMPLEMENTATION",title:"Technische Umsetzung",href:"",key:"implementation",icon:n,index:4},DISCUSSION:{id:"DISCUSSION",title:"Diskussion, Pro und Contra",href:"",key:"discussion",icon:n,index:5},OUTRO:{id:"OUTRO",title:"Fazit",href:"",key:"outro",icon:n,index:6}};function u({video:e}){return`
-        <a href="/video.html?v=${e.id}">
+        <a href="./video.html?v=${e.id}">
             <div class="flex flex-col w-72 items-center justify-center cursor-pointer drop-shadow-2xl">
                 <div class="w-full aspect-3/2 rounded-4xl border translate-y-0 hover:-translate-y-1 hover:border-2 border-black transition-all duration-300  overflow-hidden">
                     <img src="${e.icon}" alt={${e.title}} />
