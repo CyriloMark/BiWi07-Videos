@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", sans-serif;
+    --font-serif: "Cutive Mono", monospace;
+}
+
+:root {
+    --black: #0d0d0d;
+    --white: #f2f2f2;
+    --prim: #f2cb05;
+    --prim2: #f2b705;
+}
+
+html,
+body {
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+}
+
+.bg-white {
+    background: #f2f2f2;
+}
+
+.bg-grad-yellow {
+    background: #f2cb05;
+    background: linear-gradient(
+        224deg,
+        rgba(242, 203, 5, 1) 0%,
+        rgba(242, 183, 5, 1) 50%,
+        rgba(242, 226, 5, 1) 100%
+    );
+}
+
+.drop_shadow {
+    filter: drop-shadow(12px 10px 25px #060a0d);
+}
+
+.inter-regualar {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+.inter-sm {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+.boldonse {
+    font-family: "Boldonse", system-ui;
+    font-weight: 600;
+}
+.techfont {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-grad-yellow {
+    background: #f2cb05;
+    background: -webkit-linear-gradient(
+        224deg,
+        rgba(242, 203, 5, 1) 0%,
+        rgba(242, 183, 5, 1) 50%,
+        rgba(242, 226, 5, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

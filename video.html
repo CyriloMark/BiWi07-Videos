@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="stylesheet" href="/src/styles/index.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cyrill Mark" />
+    <meta name="description" content="Die neue Kulturtechnik - Videobeiträge" />
+
+    <title>Lernvideo | Die neue Kulturtechnik - Videobeiträge</title>
+</head>
+
+<body>
+
+    <main class="w-full min-h-screen bg-grad-yellow flex flex-col relative">
+
+        <div class="absolute w-full h-auto top-0 left-0 right-0 z-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f2f2f2" fillOpacity="1"
+                    d="M0,64L48,69.3C96,75,192,85,288,74.7C384,64,480,32,576,37.3C672,43,768,85,864,128C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+
+        <div class="absolute w-full h-auto bottom-0 left-0 right-0 z-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f2f2f2" fillOpacity="1"
+                    d="M0,96L48,133.3C96,171,192,245,288,250.7C384,256,480,192,576,186.7C672,181,768,235,864,234.7C960,235,1056,181,1152,160C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="w-full mt-12 pl-12 flex flex-row z-10">
+            <a href="/" class="translate-x-0 hover:-translate-x-1 transition-all duration-300">
+                <div
+                    class="drop-shadow-2xl rounded-full w-16 border-2 border-[#f2b705] aspect-square bg-white flex justify-center items-center p-2">
+                    <span class="boldense text-xl text-grad-yellow">
+                        &#8592;</span>
+                </div>
+            </a>
+        </div>
+
+        <div id="videoWrapper" class="w-full flex flex-col justify-center items-center z-20">
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center z-20 mt-12">
+            <h3 class="inter-bold italic text-black md:leading-8 md:text-3xl text-xl">
+                Transkript
+            </h3>
+
+            <div id="_download" class="mt-5 w-[60%]" tle="Gesamtes Transkript herunterladen"
+                href="https://www.google.com"></div>
+        </div>
+
+        <div class="md:p-2 p-1 mt-5 flex justify-center items-center self-center md:w-[80%] w-[90%] z-10">
+            <p class="inter-regular text-gray-400 italic text-justify leading-5">
+                &copy; 2025-2026 &#183; Hartenstein, Anton Baldur &#183; Mark,
+                Cyrill &#183; Rehak, Sophie &#183; Springl, Lisa &#183;
+                Entstanden im Rahmen der Prüfungsleistung im Modul
+                Bildungswissenschaften 7: Schule als Lern- und Lebensraum im
+                Seminar Irgendwas mit Medien III im Wintersemester 2025/26 an
+                der Universität Leipzig
+            </p>
+        </div>
+    </main>
+
+    <script type="module" src="/src/video.ts"></script>
+</body>
+
+</html>
