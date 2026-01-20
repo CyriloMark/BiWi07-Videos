@@ -6,12 +6,14 @@ type DownloadButtonData = {
 
 export default function DownloadButton({
     data,
+    key,
 }: {
-    classe?: string;
     data: DownloadButtonData;
+    key?: string;
 }) {
     return `
         <a
+            key={${key}}
             href="${data.href}"
             target="_blank"
             rel="noopener noreferrer">

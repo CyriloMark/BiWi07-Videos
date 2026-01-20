@@ -21,5 +21,5 @@ document.querySelectorAll<HTMLDivElement>("#_download")!.forEach((e, k) => {
         href: e.attributes.getNamedItem("url")?.value || "",
         icon: e.attributes.getNamedItem("icon")?.value,
     };
-    e.innerHTML = DownloadButton({ data: data });
+    e.innerHTML = DownloadButton({ data: data, key: k.toString() });
 });

@@ -1,3 +1,4 @@
+import DownloadButton from "./components/download_button";
 import { getVideo, type VideoKey } from "./constants/videos";
 
 const params = new URLSearchParams(window.location.search);
@@ -27,6 +28,10 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
 `;
 
 document.querySelectorAll<HTMLDivElement>("#_download")!.forEach((e, k) => {
-    console.log("title", e.attributes.getNamedItem("title"));
-    const data = {};
+    const data = {
+        title: e.attributes.getNamedItem("title")?.value || "",
+        href: e.attributes.getNamedItem("url")?.value || "",
+        icon: e.attributes.getNamedItem("icon")?.value,
+    };
+    e.innerHTML = DownloadButton({ data: data, key: k.toString() });
 });
