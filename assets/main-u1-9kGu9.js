@@ -1,13 +1,13 @@
-import{l as i,D as a}from"./download_button-EFRGMsCh.js";const r={HOME:{id:0,title:"Lernvideos",href:"#learn"},EXAM:{id:1,title:"Prüfungsanforderungen",href:"#exam"},TRANSCRIPT:{id:2,title:"Transkript",href:"#transcript"}};function n(){return`<div class="pl-5 pr-5 pt-2 pb-2 bg-white border border-[#f2b705] rounded-4xl drop-shadow-2xl z-20 flex md:flex-row flex-col justify-center items-center">
+import{l as i,D as a}from"./download_button-CN5n6AnQ.js";const r={HOME:{id:0,title:"Lernvideos",href:"#learn"},EXAM:{id:1,title:"Prüfungsanforderungen",href:"#exam"},TRANSCRIPT:{id:2,title:"Transkript",href:"#transcript"}};function n(){return`<div class="pl-5 pr-5 pt-2 pb-2 bg-white border border-[#f2b705] rounded-4xl drop-shadow-2xl z-20 flex md:flex-row flex-col justify-center items-center">
             ${Object.values(r).map((e,t)=>`<div
                     key={${t}}
                     class="flex md:flex-row flex-col justify-center items-center">
-                    <a href="${e.href}">
+                    <a href="${e.href}" class="text-black">
                         <p class="text-black inter-sm text-lg">${e.title}</p>
                     </a>
-
-                    ${e.id!==Object.values(r).length-1?'<div class="md:w-px md:h-6 md:ml-2 md:mr-2 w-32 h-px mt-1 mb-1 bg-black opacity-40" />':""}
-                </div>`)}
+                    ${e.id!==Object.values(r).length-1?'<div class="md:w-px md:h-6 md:ml-2 md:mr-2 w-32 h-px mt-1 mb-1 bg-black opacity-40"></div>':""}
+                </div>
+                `).join("")}
         </div>`}function d({video:e}){return`
         <a href="./video.html?v=${e.id}">
             <div class="flex flex-col w-72 items-center justify-center cursor-pointer drop-shadow-2xl">
