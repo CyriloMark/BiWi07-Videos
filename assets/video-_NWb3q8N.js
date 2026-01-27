@@ -1,4 +1,4 @@
-import{g as a,D as i}from"./download_button-CN5n6AnQ.js";const d=new URLSearchParams(window.location.search),r=d.get("v"),t=a(r||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
+import{g as a,D as i}from"./download_button-DPj0CSVf.js";const d=new URLSearchParams(window.location.search),r=d.get("v"),t=a(r||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
         Lernvideo ${t.index}
     </h4>
