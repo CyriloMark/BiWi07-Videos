@@ -1,4 +1,4 @@
-import{g as o,D as i}from"./download_button-BziyS8TB.js";const d=new URLSearchParams(window.location.search),r=d.get("v"),t=o(r||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
+import{g as o,D as i}from"./download_button-Kaa0Qah9.js";const d=new URLSearchParams(window.location.search),r=d.get("v"),t=o(r||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
         Lernvideo ${t.index}
     </h4>
@@ -7,7 +7,7 @@ import{g as o,D as i}from"./download_button-BziyS8TB.js";const d=new URLSearchPa
     </h3>
 
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
-        >> ${t.sub} <<
+        <p class="opacity-50">></p> ${t.sub} <p class="opacity-50"><</p>
     </h4>
 
     <div class="w-[80%] p-1 mt-5 drop-shadow-2xl border-2 border-white rounded-4xl overflow-visible">
