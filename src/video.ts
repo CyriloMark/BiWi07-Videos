@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
     </h3>
 
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
-        ${video.sub}
+        >> ${video.sub} <<
     </h4>
 
     <div class="w-[80%] p-1 mt-5 drop-shadow-2xl border-2 border-white rounded-4xl overflow-visible">
