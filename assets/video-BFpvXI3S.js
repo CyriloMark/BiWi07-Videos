@@ -7,7 +7,7 @@ import{g as o,D as i}from"./download_button-BziyS8TB.js";const d=new URLSearchPa
     </h3>
 
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
-        ${t.sub}
+        >> ${t.sub} <<
     </h4>
 
     <div class="w-[80%] p-1 mt-5 drop-shadow-2xl border-2 border-white rounded-4xl overflow-visible">
