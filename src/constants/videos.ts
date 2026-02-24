@@ -1,9 +1,9 @@
-import img_1 from "../img/IMG_5500.png";
-import img_2 from "../img/IMG_5500.png";
-import img_3 from "../img/IMG_5500.png";
-import img_4 from "../img/IMG_5500.png";
-import img_5 from "../img/IMG_5500.png";
-import img_6 from "../img/IMG_5500.png";
+import img_1 from "../img/1.png";
+import img_2 from "../img/2.png";
+import img_3 from "../img/3.png";
+import img_4 from "../img/4.png";
+import img_5 from "../img/5.png";
+import img_6 from "../img/6.png";
 
 export type Video = {
     id: string;
