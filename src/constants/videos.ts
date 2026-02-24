@@ -1,4 +1,9 @@
-import img_0 from "../img/IMG_5500.png";
+import img_1 from "../img/IMG_5500.png";
+import img_2 from "../img/IMG_5500.png";
+import img_3 from "../img/IMG_5500.png";
+import img_4 from "../img/IMG_5500.png";
+import img_5 from "../img/IMG_5500.png";
+import img_6 from "../img/IMG_5500.png";
 
 export type Video = {
     id: string;
@@ -17,7 +22,7 @@ export const learn_videos = {
         sub: "Einführung - Warum befassen wir uns mit Videobeiträgen?",
         href: "https://drive.google.com/file/d/15UhbZoX2ojD4bEujj1OeSnLRxRok0bhG/preview",
         key: "intro",
-        icon: img_0,
+        icon: img_1,
         index: 1,
     },
     DEF: {
@@ -26,7 +31,7 @@ export const learn_videos = {
         sub: "Definitionen einer Kulturtechnik und Videobeiträgen",
         href: "https://www.youtube.com/watch?v=146GL3pyKDY&list=RD146GL3pyKDY&start_radio=1",
         key: "def",
-        icon: img_0,
+        icon: img_2,
         index: 2,
     },
     MEANING: {
@@ -35,7 +40,7 @@ export const learn_videos = {
         sub: "Bedeutung für Schülerinnen und Schüler - Bedeutung für Jugendliche - Bedeutung für Menschen",
         href: "https://drive.google.com/file/d/15KewuU6LFxVzXvnJRe3ZPNB28t1tY7i6/preview",
         key: "meaning",
-        icon: img_0,
+        icon: img_3,
         index: 3,
     },
     IMPLEMENTATION: {
@@ -44,7 +49,7 @@ export const learn_videos = {
         sub: "Technische Umsetzung - Videobeiträge im Kontext Lernen - Einsatzmöglichkeiten - Gute vs. schlechte Lernvideos",
         href: "",
         key: "implementation",
-        icon: img_0,
+        icon: img_4,
         index: 4,
     },
     DISCUSSION: {
@@ -53,7 +58,7 @@ export const learn_videos = {
         sub: "Vor- und Nachteile für den Unterricht - Falschinformationen - Vorgefertigte Meinungen und Identitäten - Aufmerksamkeit",
         href: "",
         key: "discussion",
-        icon: img_0,
+        icon: img_5,
         index: 5,
     },
     OUTRO: {
@@ -62,7 +67,7 @@ export const learn_videos = {
         sub: "Sind Videos eine neue Kulturtechnik oder eine Ergänzung?",
         href: "",
         key: "outro",
-        icon: img_0,
+        icon: img_6,
         index: 6,
     },
 } as const satisfies Record<string, Video>;
