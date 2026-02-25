@@ -13,6 +13,7 @@ export type Video = {
     key: string;
     icon: string;
     index: number;
+    transcript_href: string;
 };
 
 export const learn_videos = {
@@ -24,6 +25,8 @@ export const learn_videos = {
         key: "intro",
         icon: img_1,
         index: 1,
+        transcript_href:
+            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
     },
     DEF: {
         id: "DEF",
@@ -33,6 +36,8 @@ export const learn_videos = {
         key: "def",
         icon: img_2,
         index: 2,
+        transcript_href:
+            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
     },
     MEANING: {
         id: "MEANING",
@@ -42,6 +47,8 @@ export const learn_videos = {
         key: "meaning",
         icon: img_3,
         index: 3,
+        transcript_href:
+            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
     },
     IMPLEMENTATION: {
         id: "IMPLEMENTATION",
@@ -51,15 +58,19 @@ export const learn_videos = {
         key: "implementation",
         icon: img_4,
         index: 4,
+        transcript_href:
+            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
     },
     DISCUSSION: {
         id: "DISCUSSION",
-        title: "Diskussion, Pro und Contra",
+        title: "Pro und Contra",
         sub: "Vor- und Nachteile für den Unterricht - Falschinformationen - Vorgefertigte Meinungen und Identitäten - Aufmerksamkeit",
         href: "",
         key: "discussion",
         icon: img_5,
         index: 5,
+        transcript_href:
+            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
     },
     OUTRO: {
         id: "OUTRO",
@@ -69,6 +80,8 @@ export const learn_videos = {
         key: "outro",
         icon: img_6,
         index: 6,
+        transcript_href:
+            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
     },
 } as const satisfies Record<string, Video>;
 

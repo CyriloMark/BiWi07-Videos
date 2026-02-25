@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
     </h3>
 
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
-        <p class="opacity-50">></p> ${video.sub} <p class="opacity-50"><</p>
+        ${video.sub}
     </h4>
 
     <div class="w-[80%] p-1 mt-5 drop-shadow-2xl border-2 border-white rounded-4xl overflow-visible">
@@ -34,7 +34,8 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
 document.querySelectorAll<HTMLDivElement>("#_download")!.forEach((e, k) => {
     const data = {
         title: e.attributes.getNamedItem("title")?.value || "",
-        href: e.attributes.getNamedItem("url")?.value || "",
+        // href: e.attributes.getNamedItem("url")?.value || "",
+        href: video.transcript_href,
         icon: e.attributes.getNamedItem("icon")?.value,
     };
     e.innerHTML = DownloadButton({ data: data, key: k.toString() });

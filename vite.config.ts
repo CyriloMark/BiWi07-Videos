@@ -4,7 +4,7 @@ import { resolve } from "path";
 
 export default defineConfig({
     plugins: [tailwindcss()],
-    base: "/BiWi07-Videos/",
+    // base: "/BiWi07-Videos/",
     build: {
         rollupOptions: {
             input: {
