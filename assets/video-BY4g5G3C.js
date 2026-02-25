@@ -1,19 +1,19 @@
-import{g as o,D as i}from"./download_button-Kaa0Qah9.js";const d=new URLSearchParams(window.location.search),r=d.get("v"),t=o(r||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
+import{g as a,D as i}from"./download_button-BxD3IZVF.js";const d=new URLSearchParams(window.location.search),r=d.get("v"),e=a(r||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
-        Lernvideo ${t.index}
+        Lernvideo ${e.index}
     </h4>
     <h3 class="inter-bold italic text-black md:leading-8 md:text-3xl text-xl mt-5">
-        ${t.title}
+        ${e.title}
     </h3>
 
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
-        <p class="opacity-50">></p> ${t.sub} <p class="opacity-50"><</p>
+        ${e.sub}
     </h4>
 
     <div class="w-[80%] p-1 mt-5 drop-shadow-2xl border-2 border-white rounded-4xl overflow-visible">
         <div class="w-full aspect-video bg-white rounded-3xl overflow-hidden">
             <iframe
-                src=${t.href}
+                src=${e.href}
                 title="Google Drive video"
                 loading="lazy"
                 allow="autoplay"
@@ -22,4 +22,4 @@ import{g as o,D as i}from"./download_button-Kaa0Qah9.js";const d=new URLSearchPa
             />
         </div>
     </div>
-`;document.querySelectorAll("#_download").forEach((e,l)=>{const a={title:e.attributes.getNamedItem("title")?.value||"",href:e.attributes.getNamedItem("url")?.value||"",icon:e.attributes.getNamedItem("icon")?.value};e.innerHTML=i({data:a,key:l.toString()})});
+`;document.querySelectorAll("#_download").forEach((t,l)=>{const o={title:t.attributes.getNamedItem("title")?.value||"",href:e.transcript_href,icon:t.attributes.getNamedItem("icon")?.value};t.innerHTML=i({data:o,key:l.toString()})});
