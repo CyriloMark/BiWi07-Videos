@@ -14,6 +14,12 @@ export type Video = {
     icon: string;
     index: number;
     transcript_href: string;
+    timestamps:
+        | {
+              time: number;
+              title: string;
+          }[]
+        | [];
 };
 
 export const learn_videos = {
@@ -27,17 +33,32 @@ export const learn_videos = {
         index: 1,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+        timestamps: [],
     },
     DEF: {
         id: "DEF",
         title: "Definitionen",
         sub: "Definitionen einer Kulturtechnik und Videobeiträgen",
-        href: "https://www.youtube.com/watch?v=146GL3pyKDY&list=RD146GL3pyKDY&start_radio=1",
+        href: "https://drive.google.com/file/d/1dQaAQSCpltFzJjkSQ_CXhzYY5Iqs0qTw/preview",
         key: "def",
         icon: img_2,
         index: 2,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+        timestamps: [
+            {
+                time: 0,
+                title: "Einleitung",
+            },
+            {
+                time: 24,
+                title: 'Def: "Kulturtechnik"',
+            },
+            {
+                time: 70,
+                title: 'Def: "Technik"/"technisch"',
+            },
+        ],
     },
     MEANING: {
         id: "MEANING",
@@ -49,6 +70,7 @@ export const learn_videos = {
         index: 3,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+        timestamps: [],
     },
     IMPLEMENTATION: {
         id: "IMPLEMENTATION",
@@ -60,6 +82,7 @@ export const learn_videos = {
         index: 4,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+        timestamps: [],
     },
     DISCUSSION: {
         id: "DISCUSSION",
@@ -71,6 +94,7 @@ export const learn_videos = {
         index: 5,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+        timestamps: [],
     },
     OUTRO: {
         id: "OUTRO",
@@ -82,6 +106,7 @@ export const learn_videos = {
         index: 6,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+        timestamps: [],
     },
 } as const satisfies Record<string, Video>;
 

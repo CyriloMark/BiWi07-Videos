@@ -1,4 +1,5 @@
 import DownloadButton from "./components/download_button";
+import TimestampButton from "./components/timestamp_button";
 import { getVideo, type VideoKey } from "./constants/videos";
 
 const params = new URLSearchParams(window.location.search);
@@ -30,6 +31,24 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
         </div>
     </div>
 `;
+
+if (video.timestamps.length > 0) {
+    document.querySelector<HTMLDivElement>("#timestampWrapper")!.innerHTML = `
+        <h3 class="inter-bold italic text-black md:leading-8 md:text-3xl text-xl mt-12">
+            Zeitstempel
+        </h3>
+        <div class="mt-5 w-[90%] md:w-[60%] flex flex-row flex-wrap">
+            ${video.timestamps
+                .map((s, key) =>
+                    TimestampButton({
+                        data: s,
+                        key: key.toString(),
+                    }),
+                )
+                .join("")}
+        </div>
+    `;
+}
 
 document.querySelectorAll<HTMLDivElement>("#_download")!.forEach((e, k) => {
     const data = {
