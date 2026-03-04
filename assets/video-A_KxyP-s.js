@@ -1,4 +1,4 @@
-import{g as a,D as i}from"./download_button-DbmLfkJp.js";function o({data:e,key:t}){return`
+import{g as a,D as i}from"./download_button-CfCBBpMy.js";function o({data:e,key:t}){return`
         <div
             key={${t}}
             data-key="${t}"
@@ -7,7 +7,7 @@ import{g as a,D as i}from"./download_button-DbmLfkJp.js";function o({data:e,key:
             <p class="inter-bold text-lg text-black">${d(e.time)}</p>
             <p class="inter-regular text-lg text-black md:ml-2 ml-1">${e.title}</p>
         </div>
-    `}function d(e){let t=Math.floor(e/60),r=e%60;return`${t}:${r<10?"0"+r:r}`}const s=new URLSearchParams(window.location.search),n=s.get("v"),l=a(n||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
+    `}function d(e){let t=Math.floor(e/60),r=e%60;return`${t}:${r<10?"0"+r:r}`}const n=new URLSearchParams(window.location.search),s=n.get("v"),l=a(s||"INTRO");document.querySelector("#videoWrapper").innerHTML=`
     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
         Lernvideo ${l.index}
     </h4>
@@ -15,7 +15,7 @@ import{g as a,D as i}from"./download_button-DbmLfkJp.js";function o({data:e,key:
         ${l.title}
     </h3>
 
-    <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
+    <h4 class="inter-sm text-black md:leading-8 leading-6 text-center md:text-xl text-lg mt-2">
         ${l.sub}
     </h4>
 
