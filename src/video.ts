@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
         ${video.title}
     </h3>
 
-    <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg mt-2">
+    <h4 class="inter-sm text-black md:leading-8 leading-6 text-center md:text-xl text-lg mt-2">
         ${video.sub}
     </h4>
 

@@ -27,13 +27,22 @@ export const learn_videos = {
         id: "INTRO",
         title: "Einstieg und Vorstellung",
         sub: "Einführung - Warum befassen wir uns mit Videobeiträgen?",
-        href: "https://drive.google.com/file/d/15UhbZoX2ojD4bEujj1OeSnLRxRok0bhG/preview",
+        href: "https://drive.google.com/file/d/1_Sbf3pniV7nmO0wasxxvUdSbHcGrdOuT/preview",
         key: "intro",
         icon: img_1,
         index: 1,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
-        timestamps: [],
+            "https://drive.google.com/uc?export=download&id=1fqYhwZp1SZYXajpXopQMl0q5XeBY0ZZ7",
+        timestamps: [
+            {
+                time: 0,
+                title: "Einleitung",
+            },
+            {
+                time: 101,
+                title: "Stand der Dinge",
+            },
+        ],
     },
     DEF: {
         id: "DEF",
@@ -44,7 +53,7 @@ export const learn_videos = {
         icon: img_2,
         index: 2,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+            "https://drive.google.com/uc?export=download&id=1FddhEGlA4cVmxGHwN6PTE2ab6qKXbnyO",
         timestamps: [
             {
                 time: 0,
@@ -81,7 +90,7 @@ export const learn_videos = {
         icon: img_4,
         index: 4,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+            "https://drive.google.com/uc?export=download&id=1uINA8q2HqCkATV68dYhPZcZbH_TDMOHL",
         timestamps: [],
     },
     DISCUSSION: {
@@ -105,7 +114,7 @@ export const learn_videos = {
         icon: img_6,
         index: 6,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+            "https://drive.google.com/uc?export=download&id=130-yQ2jqiOmjwwQvQo_Y3guHvGo9lGqJ",
         timestamps: [],
     },
 } as const satisfies Record<string, Video>;
