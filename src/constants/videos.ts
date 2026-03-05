@@ -27,7 +27,7 @@ export const learn_videos = {
         id: "INTRO",
         title: "Einstieg und Vorstellung",
         sub: "Einführung - Warum befassen wir uns mit Videobeiträgen?",
-        href: "https://drive.google.com/file/d/1_Sbf3pniV7nmO0wasxxvUdSbHcGrdOuT/preview",
+        href: "https://drive.google.com/file/d/1-Wf2No83pPapLaEv2MfACeyF21Iwabh2/preview",
         key: "intro",
         icon: img_1,
         index: 1,
@@ -48,7 +48,7 @@ export const learn_videos = {
         id: "DEF",
         title: "Definitionen",
         sub: "Definitionen einer Kulturtechnik und Videobeiträgen",
-        href: "https://drive.google.com/file/d/1dQaAQSCpltFzJjkSQ_CXhzYY5Iqs0qTw/preview",
+        href: "https://drive.google.com/file/d/1LPmep_GVhj3PJAbl5hpM3RZBZcgjvaBg/preview",
         key: "def",
         icon: img_2,
         index: 2,
@@ -84,14 +84,59 @@ export const learn_videos = {
     IMPLEMENTATION: {
         id: "IMPLEMENTATION",
         title: "Technische Umsetzung",
-        sub: "Technische Umsetzung - Videobeiträge im Kontext Lernen - Einsatzmöglichkeiten - Gute vs. schlechte Lernvideos",
-        href: "",
+        sub: "Erklärvideos - Einsatzmöglichkeiten im Unterricht - Umsetzung von Erklärvideos - Gute vs. schlechte Lernvideos",
+        href: "https://drive.google.com/file/d/1ZuvYeagUajdIXCEzCwwGmxdTBce7dige/preview",
         key: "implementation",
         icon: img_4,
         index: 4,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1uINA8q2HqCkATV68dYhPZcZbH_TDMOHL",
-        timestamps: [],
+        timestamps: [
+            {
+                time: 0,
+                title: "Einleitung",
+            },
+            {
+                time: 20,
+                title: "Videotypen",
+            },
+            {
+                time: 51,
+                title: "Def: Erklärvideo",
+            },
+            {
+                time: 112,
+                title: "Screencast/Slidecast",
+            },
+            {
+                time: 164,
+                title: "Legetechnik",
+            },
+            {
+                time: 214,
+                title: "Whiteboard-/Tafelaufnahme",
+            },
+            {
+                time: 352,
+                title: "Einsatzmöglichkeiten im Unterricht",
+            },
+            {
+                time: 412,
+                title: "Einsatz vorgefertigter Erklärvideos",
+            },
+            {
+                time: 560,
+                title: "Eigene Erklärvideos produzieren",
+            },
+            {
+                time: 640,
+                title: "Technische Umsetzung",
+            },
+            {
+                time: 919,
+                title: "Gute vs. schlechte Erklärvideos",
+            },
+        ],
     },
     DISCUSSION: {
         id: "DISCUSSION",
@@ -109,13 +154,34 @@ export const learn_videos = {
         id: "OUTRO",
         title: "Fazit",
         sub: "Sind Videos eine neue Kulturtechnik oder eine Ergänzung?",
-        href: "",
+        href: "https://drive.google.com/file/d/1FrS5KUr7pKwgrK9s8twSBy1Oe56SMAlB/preview",
         key: "outro",
         icon: img_6,
         index: 6,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=130-yQ2jqiOmjwwQvQo_Y3guHvGo9lGqJ",
-        timestamps: [],
+        timestamps: [
+            {
+                time: 0,
+                title: "Definition vom Anfang",
+            },
+            {
+                time: 25,
+                title: "Videobeiträge",
+            },
+            {
+                time: 80,
+                title: "Vergleich: Wortsprache/Bilder",
+            },
+            {
+                time: 143,
+                title: "Bewusstmachen von Mechanismen",
+            },
+            {
+                time: 191,
+                title: "Schlussfolgerung",
+            },
+        ],
     },
 } as const satisfies Record<string, Video>;
 

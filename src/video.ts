@@ -27,6 +27,7 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML = `
                 allow="autoplay"
                 sandbox="allow-scripts allow-same-origin"
                 class="w-full h-full"
+                allowfullscreen
             />
         </div>
     </div>
@@ -37,7 +38,7 @@ if (video.timestamps.length > 0) {
         <h3 class="inter-bold italic text-black md:leading-8 md:text-3xl text-xl mt-12">
             Zeitstempel
         </h3>
-        <div class="mt-5 w-[90%] md:w-[60%] flex flex-row flex-wrap">
+        <div class="mt-5 w-[90%] md:w-[80%] flex flex-row flex-wrap">
             ${video.timestamps
                 .map((s, key) =>
                     TimestampButton({
