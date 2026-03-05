@@ -102,10 +102,15 @@ export const learn_video_groups = {
             {
                 index: 1,
                 key: "vid_3.1",
-                title: "Bedeutung für Menschen und Lernende",
+                title: "Die Bedeutung von Videos für Kinder und Jugendliche",
                 sub: "Bedeutung für Schülerinnen und Schüler - Bedeutung für Jugendliche - Bedeutung für Menschen",
-                href: "https://drive.google.com/file/d/15KewuU6LFxVzXvnJRe3ZPNB28t1tY7i6/preview",
-                timestamps: [],
+                href: "https://drive.google.com/file/d/1ZAMtxp1fyBHOsrU65aidkS6xAprUxKmR/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Ein",
+                    },
+                ],
             },
         ],
     },
@@ -191,7 +196,7 @@ export const learn_video_groups = {
                 timestamps: [
                     {
                         time: 0,
-                        title: "Einführung",
+                        title: "Einleitung",
                     },
                 ],
             },
@@ -204,11 +209,7 @@ export const learn_video_groups = {
                 timestamps: [
                     {
                         time: 0,
-                        title: "Einführung",
-                    },
-                    {
-                        time: 1,
-                        title: "test",
+                        title: "Einleitung",
                     },
                 ],
             },
