@@ -1,13 +1,13 @@
-import{g as d,D as i}from"./download_button-DtRq4DPg.js";function s({data:e,key:t}){return`
+import{g as r,D as d}from"./download_button-DtRq4DPg.js";function i({data:e,key:t}){return`
         <div
             key={${t}}
             data-key="${t}"
             class="drop-shadow-xl m-1 flex flex-row md:pl-5 pl-2 pr-2 md:pr-5 pt-2 pb-2 cursor-pointer items-center border border-black rounded-2xl bg-white scale-100 hover:scale-[1.01] hover:border-2 transition-all duration-200"
         >
-            <p class="inter-bold md:text-lg text-sm text-black">${n(e.time)}</p>
+            <p class="inter-bold md:text-lg text-sm text-black">${s(e.time)}</p>
             <p class="inter-regular md:text-lg text-sm text-black md:ml-2 ml-1">${e.title}</p>
         </div>
-    `}function n(e){let t=Math.floor(e/60),l=e%60;return`${t}:${l<10?"0"+l:l}`}const o=new URLSearchParams(window.location.search),m=o.get("v"),a=d(m||"INTRO");document.querySelector("#titleWrapper").innerHTML=`
+    `}function s(e){let t=Math.floor(e/60),l=e%60;return`${t}:${l<10?"0"+l:l}`}const n=new URLSearchParams(window.location.search),o=n.get("v"),a=r(o||"INTRO");document.querySelector("#titleWrapper").innerHTML=`
     <h2 class="inter-bold text-black md:leading-32 md:text-5xl text-3xl text-center">
         ${a.title}
     </h2>
@@ -43,8 +43,8 @@ import{g as d,D as i}from"./download_button-DtRq4DPg.js";function s({data:e,key:
         </div>
     </div>
 `;document.querySelector("#videoWrapper").innerHTML=`
-        ${a.videos.map((e,t)=>`
-                        <section key="${t}" id="${e.key}" class="w-full flex flex-col justify-center items-center z-20 mt-5">
+        ${a.videos.map(e=>`
+                        <section key="${e.key}" id="${e.key}" class="w-full flex flex-col justify-center items-center z-20 mt-5">
                             <div class="md:w-[20%] w-[50%] h-0.5 bg-black mt-5 mb-5"></div>
 
                             <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
@@ -79,9 +79,9 @@ import{g as d,D as i}from"./download_button-DtRq4DPg.js";function s({data:e,key:
                                 </h3>
 
                                 <div class="mt-5 w-[90%] md:w-[80%] justify-start flex flex-row flex-wrap">
-                                    ${e.timestamps.map((l,r)=>s({data:l,key:r.toString()})).join("")}
+                                    ${e.timestamps.map((t,l)=>i({data:t,key:l.toString()})).join("")}
                                 </div>
                             </div>
                         </section>
                     `).join("")}
-`;document.querySelectorAll("#_download").forEach((e,t)=>{const l={title:e.attributes.getNamedItem("title")?.value||"",href:a.transcript_href,icon:e.attributes.getNamedItem("icon")?.value};e.innerHTML=i({data:l,key:t.toString()})});
+`;document.querySelectorAll("#_download").forEach((e,t)=>{const l={title:e.attributes.getNamedItem("title")?.value||"",href:a.transcript_href,icon:e.attributes.getNamedItem("icon")?.value};e.innerHTML=d({data:l,key:t.toString()})});
