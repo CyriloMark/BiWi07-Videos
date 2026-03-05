@@ -97,7 +97,7 @@ export const learn_video_groups = {
         title: "Bedeutung für Menschen und Lernende",
         icon: img_3,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+            "https://drive.google.com/uc?export=download&id=1UAQiOevXENwxHDvX78wIurAIxGP4C_Du",
         videos: [
             {
                 index: 1,
@@ -185,7 +185,7 @@ export const learn_video_groups = {
         title: "Pro und Contra",
         icon: img_5,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
+            "https://drive.google.com/uc?export=download&id=18fJyZfb6GTTIEYgGT7yPkOf4DxzY65ZA",
         videos: [
             {
                 index: 1,
