@@ -1,0 +1,24 @@
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();const l="/BiWi07-Videos/assets/1-efrXUBf6.png",d="/BiWi07-Videos/assets/2-2pRM_yeV.png",c="/BiWi07-Videos/assets/3-B6FtAcBy.png",u="/BiWi07-Videos/assets/4-BoiCLB2N.png",a="/BiWi07-Videos/assets/5-rmagQ2xf.png",g="/BiWi07-Videos/assets/6-LZiZghyr.png",f={INTRO:{id:"INTRO",title:"Einstieg und Vorstellung",sub:"Einführung - Warum befassen wir uns mit Videobeiträgen?",href:"https://drive.google.com/file/d/1-Wf2No83pPapLaEv2MfACeyF21Iwabh2/preview",key:"intro",icon:l,index:1,transcript_href:"https://drive.google.com/uc?export=download&id=1fqYhwZp1SZYXajpXopQMl0q5XeBY0ZZ7",timestamps:[{time:0,title:"Einleitung"},{time:101,title:"Stand der Dinge"}]},DEF:{id:"DEF",title:"Definitionen",sub:"Definitionen einer Kulturtechnik und Videobeiträgen",href:"https://drive.google.com/file/d/1LPmep_GVhj3PJAbl5hpM3RZBZcgjvaBg/preview",key:"def",icon:d,index:2,transcript_href:"https://drive.google.com/uc?export=download&id=1FddhEGlA4cVmxGHwN6PTE2ab6qKXbnyO",timestamps:[{time:0,title:"Einleitung"},{time:24,title:'Def: "Kulturtechnik"'},{time:70,title:'Def: "Technik"/"technisch"'}]},MEANING:{id:"MEANING",title:"Bedeutung für Menschen und Lernende",sub:"Bedeutung für Schülerinnen und Schüler - Bedeutung für Jugendliche - Bedeutung für Menschen",href:"https://drive.google.com/file/d/15KewuU6LFxVzXvnJRe3ZPNB28t1tY7i6/preview",key:"meaning",icon:c,index:3,transcript_href:"https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",timestamps:[]},IMPLEMENTATION:{id:"IMPLEMENTATION",title:"Technische Umsetzung",sub:"Erklärvideos - Einsatzmöglichkeiten im Unterricht - Umsetzung von Erklärvideos - Gute vs. schlechte Lernvideos",href:"https://drive.google.com/file/d/1ZuvYeagUajdIXCEzCwwGmxdTBce7dige/preview",key:"implementation",icon:u,index:4,transcript_href:"https://drive.google.com/uc?export=download&id=1uINA8q2HqCkATV68dYhPZcZbH_TDMOHL",timestamps:[{time:0,title:"Einleitung"},{time:20,title:"Videotypen"},{time:51,title:"Def: Erklärvideo"},{time:112,title:"Screencast/Slidecast"},{time:164,title:"Legetechnik"},{time:214,title:"Whiteboard-/Tafelaufnahme"},{time:352,title:"Einsatzmöglichkeiten im Unterricht"},{time:412,title:"Einsatz vorgefertigter Erklärvideos"},{time:560,title:"Eigene Erklärvideos produzieren"},{time:640,title:"Technische Umsetzung"},{time:919,title:"Gute vs. schlechte Erklärvideos"}]},DISCUSSION:{id:"DISCUSSION",title:"Pro und Contra",sub:"Vor- und Nachteile für den Unterricht - Falschinformationen - Vorgefertigte Meinungen und Identitäten - Aufmerksamkeit",href:"",key:"discussion",icon:a,index:5,transcript_href:"https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",timestamps:[]},OUTRO:{id:"OUTRO",title:"Fazit",sub:"Sind Videos eine neue Kulturtechnik oder eine Ergänzung?",href:"https://drive.google.com/file/d/1FrS5KUr7pKwgrK9s8twSBy1Oe56SMAlB/preview",key:"outro",icon:g,index:6,transcript_href:"https://drive.google.com/uc?export=download&id=130-yQ2jqiOmjwwQvQo_Y3guHvGo9lGqJ",timestamps:[]}};function p(r){const i=f[r];return console.log(i.title),i}function m({data:r,key:i}){return`
+        <div
+            key={${i}}
+            class="w-full drop-shadow-2xl items-center border border-black rounded-3xl bg-white scale-100 hover:scale-[1.01] hover:border-2 transition-all duration-200"
+        >
+            <a
+                class="w-full flex pl-5 pr-5 pt-2 pb-2 rounded-3xl"
+                href="${r.href}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <div class="flex flex-col w-full">
+                    <p class="inter-regular text-lg text-black">
+                        ${r.title}
+                    </p>
+
+                    <p class="inter-regular italic text-gray-400 -mt-1 truncate w-full">
+                        ${r.href}
+                    </p>
+                </div>
+            </a>
+        </a>
+    `}export{m as D,p as g,f as l};

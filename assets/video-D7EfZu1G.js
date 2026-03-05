@@ -1,4 +1,4 @@
-import{g as a,D as i}from"./download_button-CfCBBpMy.js";function o({data:e,key:t}){return`
+import{g as a,D as i}from"./download_button-DahSvnID.js";function o({data:e,key:t}){return`
         <div
             key={${t}}
             data-key="${t}"
@@ -28,6 +28,7 @@ import{g as a,D as i}from"./download_button-CfCBBpMy.js";function o({data:e,key:
                 allow="autoplay"
                 sandbox="allow-scripts allow-same-origin"
                 class="w-full h-full"
+                allowfullscreen
             />
         </div>
     </div>
@@ -35,7 +36,7 @@ import{g as a,D as i}from"./download_button-CfCBBpMy.js";function o({data:e,key:
         <h3 class="inter-bold italic text-black md:leading-8 md:text-3xl text-xl mt-12">
             Zeitstempel
         </h3>
-        <div class="mt-5 w-[90%] md:w-[60%] flex flex-row flex-wrap">
+        <div class="mt-5 w-[90%] md:w-[80%] flex flex-row flex-wrap">
             ${l.timestamps.map((e,t)=>o({data:e,key:t.toString()})).join("")}
         </div>
     `);document.querySelectorAll("#_download").forEach((e,t)=>{const r={title:e.attributes.getNamedItem("title")?.value||"",href:l.transcript_href,icon:e.attributes.getNamedItem("icon")?.value};e.innerHTML=i({data:r,key:t.toString()})});
