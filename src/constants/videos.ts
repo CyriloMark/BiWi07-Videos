@@ -37,7 +37,7 @@ export const learn_video_groups = {
         title: "Einstieg und Vorstellung",
         icon: img_1,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1fqYhwZp1SZYXajpXopQMl0q5XeBY0ZZ7",
+            "https://drive.google.com/uc?export=download&id=1DgckBw551jl8d2TJbICL1veeS1hsL4Kh",
         videos: [
             {
                 index: 1,
@@ -65,7 +65,7 @@ export const learn_video_groups = {
         title: "Definitionen",
         icon: img_2,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=1FddhEGlA4cVmxGHwN6PTE2ab6qKXbnyO",
+            "https://drive.google.com/uc?export=download&id=19Z2yVjvQpUoYGMLbNHNl0Aidly0BAFN-",
         videos: [
             {
                 index: 1,
@@ -222,7 +222,7 @@ export const learn_video_groups = {
         title: "Fazit",
         icon: img_6,
         transcript_href:
-            "https://drive.google.com/uc?export=download&id=130-yQ2jqiOmjwwQvQo_Y3guHvGo9lGqJ",
+            "https://drive.google.com/uc?export=download&id=1f3jVy45yYVcTdXTqx8Xh5pxzfarNnbm2",
         videos: [
             {
                 index: 1,
