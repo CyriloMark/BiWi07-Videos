@@ -6,14 +6,11 @@ import img_5 from "../img/5.png";
 import img_6 from "../img/6.png";
 
 export type Video = {
-    id: string;
+    index: number;
+    key: string;
     title: string;
     sub: string;
     href: string;
-    key: string;
-    icon: string;
-    index: number;
-    transcript_href: string;
     timestamps:
         | {
               time: number;
@@ -22,179 +19,247 @@ export type Video = {
         | [];
 };
 
-export const learn_videos = {
+export type VideoGroup = {
+    id: string;
+    key: string;
+    index: number;
+    title: string;
+    icon: string;
+    transcript_href: string;
+    videos: Video[];
+};
+
+export const learn_video_groups = {
     INTRO: {
         id: "INTRO",
-        title: "Einstieg und Vorstellung",
-        sub: "Einführung - Warum befassen wir uns mit Videobeiträgen?",
-        href: "https://drive.google.com/file/d/1-Wf2No83pPapLaEv2MfACeyF21Iwabh2/preview",
         key: "intro",
-        icon: img_1,
         index: 1,
+        title: "Einstieg und Vorstellung",
+        icon: img_1,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fqYhwZp1SZYXajpXopQMl0q5XeBY0ZZ7",
-        timestamps: [
+        videos: [
             {
-                time: 0,
-                title: "Einleitung",
-            },
-            {
-                time: 101,
-                title: "Stand der Dinge",
+                index: 1,
+                key: "vid_1.1",
+                title: "Einstieg und Vorstellung",
+                sub: "Einführung - Warum befassen wir uns mit Videobeiträgen?",
+                href: "https://drive.google.com/file/d/1-Wf2No83pPapLaEv2MfACeyF21Iwabh2/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Einleitung",
+                    },
+                    {
+                        time: 101,
+                        title: "Stand der Dinge",
+                    },
+                ],
             },
         ],
     },
     DEF: {
         id: "DEF",
-        title: "Definitionen",
-        sub: "Definitionen einer Kulturtechnik und Videobeiträgen",
-        href: "https://drive.google.com/file/d/1LPmep_GVhj3PJAbl5hpM3RZBZcgjvaBg/preview",
         key: "def",
-        icon: img_2,
         index: 2,
+        title: "Definitionen",
+        icon: img_2,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1FddhEGlA4cVmxGHwN6PTE2ab6qKXbnyO",
-        timestamps: [
+        videos: [
             {
-                time: 0,
-                title: "Einleitung",
-            },
-            {
-                time: 24,
-                title: 'Def: "Kulturtechnik"',
-            },
-            {
-                time: 70,
-                title: 'Def: "Technik"/"technisch"',
+                index: 1,
+                key: "vid_2.1",
+                title: "Was sind eigentlich Kulturtechniken?",
+                sub: "Definitionen einer Kulturtechnik und Videobeiträgen",
+                href: "https://drive.google.com/file/d/1LPmep_GVhj3PJAbl5hpM3RZBZcgjvaBg/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Einleitung",
+                    },
+                    {
+                        time: 24,
+                        title: 'Def: "Kulturtechnik"',
+                    },
+                    {
+                        time: 70,
+                        title: 'Def: "Technik"/"technisch"',
+                    },
+                ],
             },
         ],
     },
     MEANING: {
         id: "MEANING",
-        title: "Bedeutung für Menschen und Lernende",
-        sub: "Bedeutung für Schülerinnen und Schüler - Bedeutung für Jugendliche - Bedeutung für Menschen",
-        href: "https://drive.google.com/file/d/15KewuU6LFxVzXvnJRe3ZPNB28t1tY7i6/preview",
         key: "meaning",
-        icon: img_3,
         index: 3,
+        title: "Bedeutung für Menschen und Lernende",
+        icon: img_3,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
-        timestamps: [],
+        videos: [
+            {
+                index: 1,
+                key: "vid_3.1",
+                title: "Bedeutung für Menschen und Lernende",
+                sub: "Bedeutung für Schülerinnen und Schüler - Bedeutung für Jugendliche - Bedeutung für Menschen",
+                href: "https://drive.google.com/file/d/15KewuU6LFxVzXvnJRe3ZPNB28t1tY7i6/preview",
+                timestamps: [],
+            },
+        ],
     },
     IMPLEMENTATION: {
         id: "IMPLEMENTATION",
-        title: "Technische Umsetzung",
-        sub: "Erklärvideos - Einsatzmöglichkeiten im Unterricht - Umsetzung von Erklärvideos - Gute vs. schlechte Lernvideos",
-        href: "https://drive.google.com/file/d/1ZuvYeagUajdIXCEzCwwGmxdTBce7dige/preview",
         key: "implementation",
-        icon: img_4,
         index: 4,
+        title: "Technische Umsetzung",
+        icon: img_4,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1uINA8q2HqCkATV68dYhPZcZbH_TDMOHL",
-        timestamps: [
+        videos: [
             {
-                time: 0,
-                title: "Einleitung",
-            },
-            {
-                time: 20,
-                title: "Videotypen",
-            },
-            {
-                time: 51,
-                title: "Def: Erklärvideo",
-            },
-            {
-                time: 112,
-                title: "Screencast/Slidecast",
-            },
-            {
-                time: 164,
-                title: "Legetechnik",
-            },
-            {
-                time: 214,
-                title: "Whiteboard-/Tafelaufnahme",
-            },
-            {
-                time: 352,
-                title: "Einsatzmöglichkeiten im Unterricht",
-            },
-            {
-                time: 412,
-                title: "Einsatz vorgefertigter Erklärvideos",
-            },
-            {
-                time: 560,
-                title: "Eigene Erklärvideos produzieren",
-            },
-            {
-                time: 640,
+                index: 1,
+                key: "vid_4.1",
                 title: "Technische Umsetzung",
-            },
-            {
-                time: 919,
-                title: "Gute vs. schlechte Erklärvideos",
+                sub: "Erklärvideos - Einsatzmöglichkeiten im Unterricht - Umsetzung von Erklärvideos - Gute vs. schlechte Lernvideos",
+                href: "https://drive.google.com/file/d/1ZuvYeagUajdIXCEzCwwGmxdTBce7dige/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Einleitung",
+                    },
+                    {
+                        time: 20,
+                        title: "Videotypen",
+                    },
+                    {
+                        time: 51,
+                        title: "Def: Erklärvideo",
+                    },
+                    {
+                        time: 112,
+                        title: "Screencast/Slidecast",
+                    },
+                    {
+                        time: 164,
+                        title: "Legetechnik",
+                    },
+                    {
+                        time: 214,
+                        title: "Whiteboard-/Tafelaufnahme",
+                    },
+                    {
+                        time: 352,
+                        title: "Einsatzmöglichkeiten im Unterricht",
+                    },
+                    {
+                        time: 412,
+                        title: "Einsatz vorgefertigter Erklärvideos",
+                    },
+                    {
+                        time: 560,
+                        title: "Eigene Erklärvideos produzieren",
+                    },
+                    {
+                        time: 640,
+                        title: "Technische Umsetzung",
+                    },
+                    {
+                        time: 919,
+                        title: "Gute vs. schlechte Erklärvideos",
+                    },
+                ],
             },
         ],
     },
     DISCUSSION: {
         id: "DISCUSSION",
-        title: "Pro und Contra",
-        sub: "Vor- und Nachteile für den Unterricht - Falschinformationen - Vorgefertigte Meinungen und Identitäten - Aufmerksamkeit",
-        href: "",
         key: "discussion",
-        icon: img_5,
         index: 5,
+        title: "Pro und Contra",
+        icon: img_5,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
-        timestamps: [
+        videos: [
             {
-                time: 1,
-                title: "okjdf",
+                index: 1,
+                key: "vid_5.1",
+                title: "Pro und Contra",
+                sub: "Vor- und Nachteile für den Unterricht - Falschinformationen - Vorgefertigte Meinungen und Identitäten - Aufmerksamkeit",
+                href: "https://drive.google.com/file/d/1ghXex3elyzSOZMv_7Wqkegv40J5uDCfz/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Einführung",
+                    },
+                ],
+            },
+            {
+                index: 2,
+                key: "vid_5.2",
+                title: "Risiken und Konsequenzen für Lehrpersonen",
+                sub: "Risiken und Konsequenzen für Lehrpersonen",
+                href: "https://drive.google.com/file/d/1YRGr-JXExU4Qp7wVykYlxYWjQVacSUds/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Einführung",
+                    },
+                    {
+                        time: 1,
+                        title: "test",
+                    },
+                ],
             },
         ],
     },
     OUTRO: {
         id: "OUTRO",
-        title: "Fazit",
-        sub: "Sind Videos eine neue Kulturtechnik oder eine Ergänzung?",
-        href: "https://drive.google.com/file/d/1FrS5KUr7pKwgrK9s8twSBy1Oe56SMAlB/preview",
         key: "outro",
-        icon: img_6,
         index: 6,
+        title: "Fazit",
+        icon: img_6,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=130-yQ2jqiOmjwwQvQo_Y3guHvGo9lGqJ",
-        timestamps: [
+        videos: [
             {
-                time: 0,
-                title: "Definition vom Anfang",
-            },
-            {
-                time: 25,
-                title: "Videobeiträge",
-            },
-            {
-                time: 80,
-                title: "Vergleich: Wortsprache/Bilder",
-            },
-            {
-                time: 143,
-                title: "Bewusstmachen von Mechanismen",
-            },
-            {
-                time: 191,
-                title: "Schlussfolgerung",
+                index: 1,
+                key: "vid_6.1",
+                title: "Fazit",
+                sub: "Sind Videos eine neue Kulturtechnik oder eine Ergänzung?",
+                href: "https://drive.google.com/file/d/1FrS5KUr7pKwgrK9s8twSBy1Oe56SMAlB/preview",
+                timestamps: [
+                    {
+                        time: 0,
+                        title: "Definition vom Anfang",
+                    },
+                    {
+                        time: 25,
+                        title: "Videobeiträge",
+                    },
+                    {
+                        time: 80,
+                        title: "Vergleich: Wortsprache/Bilder",
+                    },
+                    {
+                        time: 143,
+                        title: "Bewusstmachen von Mechanismen",
+                    },
+                    {
+                        time: 191,
+                        title: "Schlussfolgerung",
+                    },
+                ],
             },
         ],
     },
-} as const satisfies Record<string, Video>;
+} as const satisfies Record<string, VideoGroup>;
 
-export type VideoKey = keyof typeof learn_videos;
-export type VideoType = (typeof learn_videos)[VideoKey];
+export type VideoGroupKey = keyof typeof learn_video_groups;
+export type VideoGroupType = (typeof learn_video_groups)[VideoGroupKey];
 
-export function getVideo(video: VideoKey) {
-    const item = learn_videos[video];
-    console.log(item.title);
+export function getVideoGroup(video: VideoGroupKey) {
+    const item = learn_video_groups[video];
     return item;
 }

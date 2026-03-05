@@ -1,6 +1,6 @@
-import type { Video } from "../constants/videos";
+import type { VideoGroup } from "../constants/videos";
 
-export function VideoPreview({ video }: { video: Video }) {
+export function VideoPreview({ video }: { video: VideoGroup }) {
     return `
         <a href="./video.html?v=${video.id}">
             <div class="flex flex-col w-72 items-center justify-center cursor-pointer drop-shadow-2xl">
