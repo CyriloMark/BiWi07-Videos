@@ -148,7 +148,12 @@ export const learn_videos = {
         index: 5,
         transcript_href:
             "https://drive.google.com/uc?export=download&id=1fj-qbj8hPWtv9apZAn_kNhIuQ-p6qE_e",
-        timestamps: [],
+        timestamps: [
+            {
+                time: 1,
+                title: "okjdf",
+            },
+        ],
     },
     OUTRO: {
         id: "OUTRO",
