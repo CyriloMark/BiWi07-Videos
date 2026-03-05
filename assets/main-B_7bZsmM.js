@@ -1,4 +1,4 @@
-import{l as i,D as a}from"./download_button-CRzSymdI.js";const r={HOME:{id:0,title:"Lernvideos",href:"#learn"},EXAM:{id:1,title:"Prüfungsanforderungen",href:"#exam"},TRANSCRIPT:{id:2,title:"Transkript",href:"#transcript"}};function n(){return`<div class="pl-5 pr-5 pt-2 pb-2 bg-white border border-[#f2b705] rounded-4xl drop-shadow-2xl z-20 flex md:flex-row flex-col justify-center items-center">
+import{l as i,D as a}from"./download_button-5T7xkogT.js";const r={HOME:{id:0,title:"Lernvideos",href:"#learn"},EXAM:{id:1,title:"Prüfungsanforderungen",href:"#exam"},TRANSCRIPT:{id:2,title:"Transkript",href:"#transcript"}};function n(){return`<div class="pl-5 pr-5 pt-2 pb-2 bg-white border border-[#f2b705] rounded-4xl drop-shadow-2xl z-20 flex md:flex-row flex-col justify-center items-center">
             ${Object.values(r).map((e,t)=>`<div
                     key={${t}}
                     class="flex md:flex-row flex-col justify-center items-center">
