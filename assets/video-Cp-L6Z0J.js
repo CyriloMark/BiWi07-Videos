@@ -1,4 +1,4 @@
-import{g as r,D as i}from"./download_button-5T7xkogT.js";function d({data:e,key:t}){return`
+import{g as i,D as r}from"./download_button-CeT35VuW.js";function d({data:e,key:t}){return`
         <div
             key={${t}}
             data-key="${t}"
@@ -7,12 +7,12 @@ import{g as r,D as i}from"./download_button-5T7xkogT.js";function d({data:e,key:
             <p class="inter-bold md:text-lg text-sm text-black">${o(e.time)}</p>
             <p class="inter-regular md:text-lg text-sm text-black md:ml-2 ml-1">${e.title}</p>
         </div>
-    `}function o(e){let t=Math.floor(e/60),l=e%60;return`${t}:${l<10?"0"+l:l}`}const s=new URLSearchParams(window.location.search),n=s.get("v"),a=r(n||"INTRO");document.querySelector("#videoWrapper").innerHTML=a.videos.map(e=>`
+    `}function o(e){let t=Math.floor(e/60),l=e%60;return`${t}:${l<10?"0"+l:l}`}const s=new URLSearchParams(window.location.search),n=s.get("v"),a=i(n||"INTRO");document.querySelector("#videoWrapper").innerHTML=a.videos.map(e=>`
                 <div key="${e.key}" class="w-full flex flex-col justify-center items-center z-20 mt-5">
                     ${e.index>=2?'<div class="md:w-[20%] w-[50%] h-0.5 bg-black mt-5 mb-5"></div>':""}
 
                     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
-                        Lernvideo ${a.videos.length===1?e.index:`${a.index}.${e.index}`}
+                        Lernvideo ${a.videos.length===1?a.index:`${a.index}.${e.index}`}
                     </h4>
 
                     <h3 class="max-w-[90%] inter-bold italic text-black text-center md:leading-8 leading-6 md:text-3xl text-xl mt-5">
@@ -47,4 +47,4 @@ import{g as r,D as i}from"./download_button-5T7xkogT.js";function d({data:e,key:
                         </div>
                     </div>
                 </div>
-            `).join("");document.querySelectorAll("#_download").forEach((e,t)=>{const l={title:e.attributes.getNamedItem("title")?.value||"",href:a.transcript_href,icon:e.attributes.getNamedItem("icon")?.value};e.innerHTML=i({data:l,key:t.toString()})});
+            `).join("");document.querySelectorAll("#_download").forEach((e,t)=>{const l={title:e.attributes.getNamedItem("title")?.value||"",href:a.transcript_href,icon:e.attributes.getNamedItem("icon")?.value};e.innerHTML=r({data:l,key:t.toString()})});
