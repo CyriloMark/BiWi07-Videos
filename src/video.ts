@@ -15,7 +15,7 @@ document.querySelector<HTMLDivElement>("#videoWrapper")!.innerHTML =
                     ${video.index >= 2 ? `<div class="md:w-[20%] w-[50%] h-0.5 bg-black mt-5 mb-5"></div>` : ""}
 
                     <h4 class="inter-sm text-black md:leading-8 md:text-xl text-lg">
-                        Lernvideo ${videoGroup.videos.length === 1 ? video.index : `${videoGroup.index}.${video.index}`}
+                        Lernvideo ${videoGroup.videos.length === 1 ? videoGroup.index : `${videoGroup.index}.${video.index}`}
                     </h4>
 
                     <h3 class="max-w-[90%] inter-bold italic text-black text-center md:leading-8 leading-6 md:text-3xl text-xl mt-5">

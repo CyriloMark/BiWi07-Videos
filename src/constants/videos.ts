@@ -108,7 +108,27 @@ export const learn_video_groups = {
                 timestamps: [
                     {
                         time: 0,
-                        title: "Ein",
+                        title: "Einleitung",
+                    },
+                    {
+                        time: 25,
+                        title: "Persönliche Identität",
+                    },
+                    {
+                        time: 62,
+                        title: "Soziale Identität",
+                    },
+                    {
+                        time: 158,
+                        title: "Biologische Einflüsse",
+                    },
+                    {
+                        time: 232,
+                        title: "YouTube Nutzung und Wünsche",
+                    },
+                    {
+                        time: 452,
+                        title: "Zusammenfassung",
                     },
                 ],
             },
@@ -191,12 +211,24 @@ export const learn_video_groups = {
                 index: 1,
                 key: "vid_5.1",
                 title: "Pro und Contra",
-                sub: "Vor- und Nachteile für den Unterricht - Falschinformationen - Vorgefertigte Meinungen und Identitäten - Aufmerksamkeit",
+                sub: "Vor- und Nachteile für den Unterricht",
                 href: "https://drive.google.com/file/d/1ghXex3elyzSOZMv_7Wqkegv40J5uDCfz/preview",
                 timestamps: [
                     {
                         time: 0,
                         title: "Einleitung",
+                    },
+                    {
+                        time: 37,
+                        title: "Vorteile",
+                    },
+                    {
+                        time: 248,
+                        title: "Nachteile",
+                    },
+                    {
+                        time: 355,
+                        title: "Gesamtüberblick",
                     },
                 ],
             },
@@ -204,12 +236,32 @@ export const learn_video_groups = {
                 index: 2,
                 key: "vid_5.2",
                 title: "Risiken und Konsequenzen für Lehrpersonen",
-                sub: "Risiken und Konsequenzen für Lehrpersonen",
+                sub: "Falschinformationen - Vorgefertigte Meinungen und Identitäten - didaktische Konsequenzen",
                 href: "https://drive.google.com/file/d/1YRGr-JXExU4Qp7wVykYlxYWjQVacSUds/preview",
                 timestamps: [
                     {
                         time: 0,
                         title: "Einleitung",
+                    },
+                    {
+                        time: 33,
+                        title: "Falschinformationen",
+                    },
+                    {
+                        time: 82,
+                        title: "Didaktische Konsequenzen",
+                    },
+                    {
+                        time: 154,
+                        title: "Meinungsbildung",
+                    },
+                    {
+                        time: 190,
+                        title: "Didaktische Konsequenzen",
+                    },
+                    {
+                        time: 204,
+                        title: "Gesamtüberblick",
                     },
                 ],
             },
